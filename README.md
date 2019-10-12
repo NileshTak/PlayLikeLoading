@@ -19,9 +19,9 @@
   
  > maven { url 'https://jitpack.io' }
  
- Create the layout on which you want to apply the effect
+ * Create the layout on which you want to apply the effect
    
- Last, but not least you have to start it from your Kotlin code 
+ * Last, but not least you have to start it from your Kotlin code 
 
      override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
