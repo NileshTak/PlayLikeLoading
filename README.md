@@ -13,6 +13,7 @@
  > implementation 'com.github.NileshTak:PlayLikeLoading:0.1.0'
  
   * Add Maven URL :
+  
 allprojects {
 		repositories {
 			...
