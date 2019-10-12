@@ -128,17 +128,7 @@
 
 Last, but not least you have to start it from your Kotlin code 
 
-class MainActivity : AppCompatActivity() {
-
-    lateinit var ivLogo : ImageView
-    lateinit var iv1 : ImageView
-    lateinit var iv2 : ImageView
-    lateinit var iv3 : ImageView
-    lateinit var iv4 : ImageView
-    lateinit var tvName : TextView
-    lateinit var cvBtn : CardView
-
-    override fun onCreate(savedInstanceState: Bundle?) {
+     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -165,7 +155,7 @@ class MainActivity : AppCompatActivity() {
 
         Handler().postDelayed({ playLike.stop() }, 2000)
     }
-}
+ 
 
 
  
