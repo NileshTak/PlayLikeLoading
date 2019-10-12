@@ -8,6 +8,5 @@
  
  Get the latest artifact via gradle
  
- '''
- implementation 'com.github.NileshTak:PlayLikeLoading:0.1.0'
- '''
+ > implementation 'com.github.NileshTak:PlayLikeLoading:0.1.0'
+ 
