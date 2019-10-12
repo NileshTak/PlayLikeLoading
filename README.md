@@ -51,21 +51,26 @@
         Handler().postDelayed({ playLike.stop() }, 2000)
     }
  
- To Change Border Color
+ * To Change Border Color
  
  >  .borderColor("HashCode of Your Border Color")    // Default #BDBDBD
  
- To Change Border Stroke
+ * To Change Border Stroke
  
  >  .borderStroke("Border Stroke Value in Float")  //Default 8f
  
- To Change Border Radius
+ * To Change Border Radius
  
  > .borderRadius("Border Value in Integer")       // Default 5
  
- To Change Filled Color
+ * To Change Filled Color
  
  > .fillColor( "HashCode of Your Color")      //  Default White
+ 
+ 
+ 
+ * Inspired By :
+ https://github.com/florent37/FiftyShadesOf
  
  
  
