@@ -4,3 +4,9 @@
  
  ![](20191012_154113.gif)
  
+ # Download and usage
+ 
+ Get the latest artifact via gradle
+ 
+ implementation 'com.github.NileshTak:PlayLikeLoading:0.1.0'
+ 
