@@ -9,7 +9,7 @@
  Get the latest artifact via gradle
  
   * Add Dependency :
- > implementation 'com.github.NileshTak:PlayLikeLoading:Tag'
+ > implementation 'com.github.NileshTak:PlayLikeLoading:0.1.0'
  
   * Add Maven URL :
  > maven { url 'https://jitpack.io' }
@@ -125,6 +125,24 @@
 
 
 </LinearLayout>
+
+Last, but not least you have to start it from your Kotlin code 
+
+findViewById<View>(R.id.layout).setOnClickListener(View.OnClickListener { load() })
+ 
+  internal fun load() {
+        val playLike = PlayLikeLoading.with(this)
+            .withLayouts(ivLogo,tvName,cvBtn,iv1,iv2,iv3,iv4)
+            .withoutLayout( )
+            .borderColor("")    // Default #BDBDBD
+            .borderStroke("15f")  //Default 8f
+            .borderRadius("")       // Default 5
+            .fillColor( "")                //  Default #FFFFFF
+            .start()
+
+
+        Handler().postDelayed({ playLike.stop() }, 2000)
+    }
 
  
  
