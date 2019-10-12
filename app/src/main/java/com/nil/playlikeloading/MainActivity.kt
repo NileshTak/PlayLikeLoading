@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var iv1 : ImageView
     lateinit var iv2 : ImageView
     lateinit var iv3 : ImageView
+    lateinit var iv4 : ImageView
     lateinit var tvName : TextView
     lateinit var cvBtn : CardView
 
@@ -37,17 +38,18 @@ class MainActivity : AppCompatActivity() {
         iv1 = findViewById<ImageView>(R.id.iv1)
         iv2 = findViewById<ImageView>(R.id.iv2)
         iv3 = findViewById<ImageView>(R.id.iv3)
+        iv4 = findViewById<ImageView>(R.id.iv4)
         findViewById<View>(R.id.layout).setOnClickListener(View.OnClickListener { load() })
     }
 
     internal fun load() {
         val playLike = PlayLikeLoading.with(this)
-            .withLayouts(ivLogo,tvName,cvBtn,iv1,iv2,iv3)
+            .withLayouts(ivLogo,tvName,cvBtn,iv1,iv2,iv3,iv4)
             .withoutLayout( )
-            .borderColor("")
-            .borderStroke("")
-            .borderRadius("")
-            .fillColor( "")
+            .borderColor("#fb0091")    // Default #BDBDBD
+            .borderStroke("15f")  //Default 8f
+            .borderRadius("50")       // Default 5
+            .fillColor( "#ff7e67")                //  Default #FFFFFF
             .start()
 
 
