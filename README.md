@@ -22,8 +22,18 @@
  * Create the layout on which you want to apply the effect
    
  * Last, but not least you have to start it from your Kotlin code 
+ 
+class MainActivity : AppCompatActivity() {
 
-     override fun onCreate(savedInstanceState: Bundle?) {
+    lateinit var ivLogo : ImageView
+    lateinit var iv1 : ImageView
+    lateinit var iv2 : ImageView
+    lateinit var iv3 : ImageView
+    lateinit var iv4 : ImageView
+    lateinit var tvName : TextView
+    lateinit var cvBtn : CardView
+
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -38,18 +48,21 @@
     }
 
     internal fun load() {
-        val playLike = PlayLikeLoading.with(this)
-            .withLayouts(ivLogo,tvName,cvBtn,iv1,iv2,iv3,iv4)
-            .withoutLayout( )
-            .borderColor("")    // Default #BDBDBD
-            .borderStroke("15f")  //Default 8f
-            .borderRadius("")       // Default 5
-            .fillColor( "")                //  Default #FFFFFF
-            .start()
-
-
-        Handler().postDelayed({ playLike.stop() }, 2000)
+            val playLike = PlayLikeLoading.with(this)
+                .withLayouts(ivLogo,tvName,cvBtn,iv1,iv2,iv3,iv4)
+                .withoutLayout( )
+                .borderColor("#fb0091")
+                .borderStroke("15f")
+                .borderRadius("50")
+                .fillColor( "#ff7e67")
+                .start()
+    
+    
+            Handler().postDelayed({ playLike.stop() }, 2000)
     }
+}
+
+
  
  * To Change Border Color
  
