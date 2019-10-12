@@ -8,11 +8,11 @@
  
  Get the latest artifact via gradle
  
- > dependencies {
+ dependencies {
 	        implementation 'com.github.NileshTak:PlayLikeLoading:Tag'
 	}
  
- >allprojects {
+ allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
