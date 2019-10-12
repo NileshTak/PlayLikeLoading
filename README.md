@@ -8,16 +8,11 @@
  
  Get the latest artifact via gradle
  
- dependencies {
-	        implementation 'com.github.NileshTak:PlayLikeLoading:Tag'
-	}
+  * Add Dependency :
+ > implementation 'com.github.NileshTak:PlayLikeLoading:Tag'
  
- allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+  * Add Maven URL :
+ > maven { url 'https://jitpack.io' }
  
  Create the layout on which you want to apply the effect
  
